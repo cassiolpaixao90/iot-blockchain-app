@@ -4,9 +4,11 @@ import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Component;
 
 import br.com.cassiopaixao.blockchain.iot.models.Users;
 
+@Component
 public class UserDTO extends User {
 
 	private static final long serialVersionUID = 1L;
