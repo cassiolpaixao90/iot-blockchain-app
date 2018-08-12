@@ -18,7 +18,7 @@ CREATE TABLE user_permission (
 	FOREIGN KEY (code_permission) REFERENCES permission(code)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO user (code, name, email, password) values (1, 'Admin', 'iot@iot.com', '$2a$10$X607ZPhQ4EgGNaYKt3n4SONjIv9zc.VMWdEuhCuba7oLAL5IvcL5.');
+INSERT INTO user (code, name, email, password) values (1, 'Admin', 'iot@iot.com', '$2a$10$kXTUpzYtml5X6.NCHVZgvu5B.GoAnK.RDZaFYyoKF6VqPtLA8/2f.');
 
 INSERT INTO permission (code, description) values (1, 'ROLE_CADASTRAR');
 INSERT INTO permission (code, description) values (2, 'ROLE_PESQUISAR');

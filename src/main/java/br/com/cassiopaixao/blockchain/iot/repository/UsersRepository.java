@@ -1,4 +1,4 @@
-package repository;
+package br.com.cassiopaixao.blockchain.iot.repository;
 
 import java.util.Optional;
 

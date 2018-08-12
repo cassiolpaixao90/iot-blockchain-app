@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.cassiopaixao.blockchain.iot.dtos.UserDTO;
 import br.com.cassiopaixao.blockchain.iot.models.Users;
-import repository.UsersRepository;
+import br.com.cassiopaixao.blockchain.iot.repository.UsersRepository;
 
 @Service
 public class AppUserDetailsService implements UserDetailsService {
