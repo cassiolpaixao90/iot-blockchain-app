@@ -21,7 +21,7 @@ public class Users {
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "user_permission", joinColumns = @JoinColumn(name = "code_user"), inverseJoinColumns = @JoinColumn(name = "code_permission"))
 	private List<Permission> permissions;
-	
+
 	@Id
 	private Long code;
 
@@ -57,6 +57,14 @@ public class Users {
 		this.password = password;
 	}
 
+	public List<Permission> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
+	}
+
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", code=" + code + "]";
@@ -86,7 +94,5 @@ public class Users {
 			return false;
 		return true;
 	}
-
-	
 
 }
