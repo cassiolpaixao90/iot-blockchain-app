@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 public class CorsFilter implements Filter {
 	
 	
-	private static final String ORIGEMPERMITIDA = "http://localhost:4200/";
+	private static final String ORIGEMPERMITIDA = "http://localhost:4200";
 
 	
 	@Override
